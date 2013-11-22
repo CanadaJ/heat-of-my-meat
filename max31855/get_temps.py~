@@ -1,9 +1,10 @@
 #!/usr/bin/python
-from max31855 import MAX31855, MAX31855Error
+#from max31855 import MAX31855, MAX31855Error
 import sys, os, time, sqlite3
 
 # Open the database. Will create one if it does not already exist
 conn = sqlite3.connect(sys.argv[1])
+sys.exit(0)
 stmt = 'create table if not exists temps (temp text)'
 c = conn.cursor()
 c.execute(stmt)
