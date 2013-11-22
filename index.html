@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+		<!-- Stylesheets -->
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">	
+		<link href="dist/css/jquery.jqplot.min.css" rel="stylesheet" media="screen">
+		<link href="dist/css/heatofmymeat.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="container">
+         <div class="row">
+         	<div class="col-12 topBanner">
+             	<input type="text" class="dial" data-angleOffset=-125 data-angleArc=250>
+            </div>
+         </div>
+         <div class="row row-padded">
+         	<div class="col-xs-4"></div>
+         	<div class="col-xs-4">
+					<button type="button" class="btn btn-danger btn-lg btn-block" id="stopLog">Stop</button>						
+				</div>
+				<div class="col-xs-4">
+					<button type="button" class="btn btn-success btn-lg btn-block" id="startLog">Start</button>						
+				</div>
+				<div class="col-xs-4"></div>        
+         </div>
+			<div class="row">
+				<form class="form-inline" role="form">
+	         	<div class="form-group col-xs-4">
+	         		<label class="sr-only" for="minThreshhold">Minimum Threshold</label>
+	         		<input type="text" class="form-control" id="minThreshold" placeholder="Minimum">
+	         	</div>
+	         	<div class="form-group col-xs-4">
+	         		<label class="sr-only" for="maxThreshhold">Maximum Threshold</label>
+	         		<input type="text" class="form-control" id="maxThreshold" placeholder="Minimum">
+	         	</div>
+	         	<div class="form-group col-xs-4">
+	         		<label class="sr-only" for="updateThreshold">Update Threshold</label>
+	         		<button type="button" class="btn btn-primary" id="updateThreshold">Update</button>
+	         	</div>
+	         </form>
+         </div>         
+
+         
+         <div class="row">
+         	<div class="col-12 topBanner">
+            	<div id="tempGraph" class="plot"></div>
+         	</div>
+  			</div>
+  		</div> 
+	</body>
+	<!-- Javascript -->
+	<script src="dist/js/jquery-2.0.3.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script src="dist/js/jquery.knob.js"></script>
+	<script src="dist/js/jquery.jqplot.min.js"></script>
+	<script src="dist/js/jqplot.barRenderer.min.js"></script>
+	<script src="dist/js/jqplot.categoryAxisRenderer.min.js"></script>
+	<script src="dist/js/heatofmymeat.js"></script>
+</html>
